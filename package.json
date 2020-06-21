@@ -4,15 +4,21 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "react-complete-guide-install": "npm install --prefix react-complete-guide",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "react-complete-guide": "npm start --prefix react-complete-guide",
+    "dev": "concurrently \"npm run server\" \"npm run react-complete-guide\""
   },
   "author": "Ajay",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "create-react-app": "^3.4.1",
     "express": "^4.17.1",
+    "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.15",
     "passport": "^0.4.1",
