@@ -1,4 +1,4 @@
 module.exports = {
-    mongoURI: 'mongodb://localhost:27017/devconnector',
-    jwtkey : "AjayBaby"
+    mongoURI: 'mongodb://localhost:27017/fibi11',
+    
 }
